@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Document</title>
+    <link />
+    <script>
+      function toggleView() {
+        var password = document.getElementById("pass");
+        var openEye = document.getElementById("open");
+        var closedEye = document.getElementById("close");
+
+        if (password.type === "password") {
+          password.type = "text";
+          openEye.style.display = "block";
+          closedEye.style.display = "none";
+        } else {
+          password.type = "password";
+          closedEye.style.display = "block";
+          openEye.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .bluediv {
+      height: 500px;
+      width: 1000px;
+      background-color: rgb(40, 100, 212);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 70px;
+    }
+    .div1 {
+      height: 70px;
+      width: 400px;
+      background-color: white;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .pass {
+      height: 70px;
+      width: 350px;
+      font-size: 30px;
+      border-radius: 5px 0px 0px 5px;
+    }
+    .fa-solid {
+      font-size: 25px;
+    }
+    .btn1 {
+      height: 72px;
+      width: 50px;
+      background-color: white;
+      border: none;
+      border-radius: 0px 5px 5px 0px;
+    }
+    .div2 {
+      height: 70px;
+      width: 400px;
+      background-color: white;
+      border-radius: 5px;
+    }
+
+    #open {
+      display: none;
+    }
+  </style>
+  <body>
+    <div class="bluediv">
+      <div class="div1">
+        <input type="password" class="pass" id="pass" />
+        <button class="btn1" onclick="toggleView()">
+          <i class="fa-solid fa-eye" id="open"></i>
+          <i class="fa-solid fa-eye-slash" id="close"></i>
+        </button>
+      </div>
+      <!-- <div class="div2"></div> -->
+    </div>
+  </body>
+</html>
