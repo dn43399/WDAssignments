@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function calculate() {
+        var cLanguage = Number(document.getElementById("c").value) || 0;
+        var cppLanguage = Number(document.getElementById("cpp").value) || 0;
+        var database = Number(document.getElementById("database").value) || 0;
+        var html = Number(document.getElementById("html").value) || 0;
+        var css = Number(document.getElementById("css").value) || 0;
+        var php = Number(document.getElementById("php").value) || 0;
+        var coreJava = Number(document.getElementById("java").value) || 0;
+        var total =
+          cLanguage + cppLanguage + database + html + css + php + coreJava;
+        var percentage = parseInt((total / 350) * 100);
+
+        document.getElementById("total").textContent = total;
+        document.getElementById("percentage").textContent = percentage;
+      }
+    </script>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .marksheet {
+      width: 600px;
+      padding: 20px;
+      border: 1px solid #000;
+    }
+    label {
+      display: inline-block;
+      width: 45%;
+    }
+    .input {
+      width: 45%;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .inputs {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+  <body>
+    <div class="marksheet">
+      <h2>Marksheet for Information Technology</h2>
+      <p>Enter Marks</p>
+      <div class="inputs">
+        <label>C Language</label><input type="number" id="c" class="input" />
+        <label>C++ Language</label
+        ><input type="number" id="cpp" class="input" /> <label>Database</label
+        ><input type="number" id="database" class="input" /> <label>HTML</label
+        ><input type="number" id="html" class="input" /> <label>CSS</label
+        ><input type="number" id="css" class="input" /> <label>PHP</label
+        ><input type="number" id="php" class="input" /> <label>Core Java</label
+        ><input type="number" id="java" class="input" />
+        <button type="button" onclick="calculate()">Result</button>
+      </div>
+      <p>Total is: <span id="total"></span> / 350</p>
+      <p>Percentage is: <span id="percentage"></span> %</p>
+    </div>
+  </body>
+</html>
