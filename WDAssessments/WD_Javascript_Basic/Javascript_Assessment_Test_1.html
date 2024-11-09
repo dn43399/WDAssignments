@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+  <body>
+    <h1>Form</h1>
+    <form>
+      <table align="center" cellpadding="10px" border="3px solid black">
+        <tr>
+          <th>Choise for booking</th>
+          <td>
+            <select name="booking" id="booking">
+              <option value="full">Full day booking</option>
+              <option value="half">Half day booking</option>
+              <option value="slot">slot</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>User name</th>
+          <td>
+            <input type="text" name="user" value="" />
+          </td>
+        </tr>
+        <tr>
+          <th>Mobile Number</th>
+          <td>
+            <input type="text" />
+          </td>
+        </tr>
+        <tr>
+          <th>Email</th>
+
+          <td>
+            <input type="Email" name="emailid" />
+          </td>
+        </tr>
+
+        <tr>
+          <th>No of Person</th>
+
+          <td>
+            <input type="text" name="person" />
+          </td>
+        </tr>
+
+        <tr id="date">
+          <th>Date</th>
+          <td>
+            <input type="date" />
+          </td>
+        </tr>
+
+        <tr id="time">
+          <th>Time</th>
+
+          <td>
+            <input type="datetime-local" />
+          </td>
+        </tr>
+
+        <tr id="slot">
+          <th>Slot</th>
+          <td>
+            <select name="slot" id="slot">
+              <option value="breakfast">Breakfast</option>
+              <option value="lunch">Lunch</option>
+              <option value="dinner">Dinner</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script>
+      const booking = document.getElementById("booking");
+      const date = document.getElementById("date");
+      const time = document.getElementById("time");
+      const slot = document.getElementById("slot");
+
+      function update() {
+        const choice = booking.value;
+
+        date.style.display = "table-row";
+
+        if (choice === "full") {
+          time.style.display = "none";
+          slot.style.display = "none";
+        } else if (choice === "half") {
+          slot.style.display = "table-row";
+          time.style.display = "none";
+        } else if (choice === "slot") {
+          time.style.display = "table-row";
+          slot.style.display = "none";
+        }
+      }
+
+      booking.addEventListener("change", update);
+
+      update();
+
+      const note = document.createElement("p");
+      note.textContent = "createNode Example.";
+      note.style.color = "blue";
+      document.body.appendChild(note);
+    </script>
+  </body>
+</html>
