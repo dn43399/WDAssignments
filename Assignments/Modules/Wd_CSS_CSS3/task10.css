@@ -1,0 +1,147 @@
+.main {
+  height: auto;
+  width: 100%;
+  background-color: white;
+}
+.menudiv {
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.menu {
+  height: 80px;
+  width: 95%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.head1 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+  height: 70px;
+  width: 70px;
+  border: none;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fa-solid {
+  font-size: 40px;
+}
+.head2 {
+  margin: 0px;
+}
+.paradiv {
+  height: 750px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ddiv {
+  height: 40px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: rgb(249, 249, 229);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.head3 {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mandiv {
+  height: 270px;
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.head4 {
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.simdiv {
+  height: 90px;
+  width: 500px;
+}
+.head5 {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+  color: darkslategrey;
+}
+.btndiv {
+  height: 250px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.text {
+  height: 80px;
+  width: 400px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  border: 2px solid darkgray;
+  font-size: 30px;
+  text-align: center;
+}
+.trybtn {
+  height: 80px;
+  width: 405px;
+  background-color: blueviolet;
+  border-radius: 5px;
+  font-size: 30px;
+  border: none;
+  text-align: center;
+}
+.grfdiv {
+  width: 100%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.graph {
+  width: 900px;
+  height: 700px;
+}
+.customers {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-direction: column;
+}
+.trusted-heading {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+}
+.logos {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}

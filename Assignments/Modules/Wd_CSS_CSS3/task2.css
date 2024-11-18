@@ -1,0 +1,310 @@
+* {
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main {
+  height: auto;
+  width: 100%;
+  background-color: white;
+}
+.img {
+  height: 900px;
+  width: 100%;
+  background-image: url(ballons.jpg);
+  clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 91%, 0 80%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.opa {
+  height: 900px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.xdiv {
+  height: 900px;
+  width: 96%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+}
+
+.navbar {
+  height: 120px;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+.logo {
+  height: 90px;
+  width: 35%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.linediv {
+  height: 30px;
+  width: 80px;
+  border: 3px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ldiv {
+  height: 30px;
+  width: 35%;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.head1 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: rgb(40, 39, 39);
+}
+.ogodiv {
+  height: 90px;
+  width: 65%;
+  background-color: transparent;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.head2 {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: white;
+}
+.nav {
+  height: 90px;
+  width: 50%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.home {
+  color: crimson;
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navtag {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.btnpdiv {
+  height: 500px;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn1 {
+  height: 50px;
+  width: 50px;
+  background-color: lightgray;
+}
+.bt1 {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+.paradiv {
+  height: 400px;
+  width: 600px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head3 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.head4 {
+  font-size: 40px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-block: 0px;
+}
+.line {
+  width: 200px;
+  border: 2px solid white;
+}
+.btn2 {
+  height: 50px;
+  width: 50px;
+  background-color: crimson;
+}
+.head5 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.btndiv {
+  height: 120px;
+  width: 600px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.getbtn {
+  height: 50px;
+  width: 50%;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.lerbtn {
+  height: 50px;
+  width: 50%;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+}
+.bt2 {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+.whitediv {
+  height: 250px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+  position: relative;
+}
+.crldiv {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  position: absolute;
+  margin-top: -110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fa-solid {
+  font-size: 20px;
+  color: crimson;
+}
+.div1 {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sleek {
+  height: 60px;
+  width: 60px;
+  border: 1px solid coral;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fa-regular {
+  font-size: 20px;
+  color: crimson;
+}
+.head6 {
+  color: crimson;
+  margin-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.line1 {
+  width: 40px;
+  color: 2px solid black;
+}
+.head7 {
+  margin-block: 0px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.div2 {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.div3 {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.div4 {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head8 {
+  color: black;
+  margin-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.line2 {
+  width: 40px;
+}
+.head9 {
+  margin-block: 0px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}

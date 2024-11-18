@@ -1,0 +1,51 @@
+.main {
+  height: 100vh;
+  width: 1500px;
+  display: flex;
+  align-items: end;
+  background-image: url(background-3883181_640.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wave {
+  stroke: #ff5500;
+  stroke-width: 4;
+  opacity: 1;
+}
+
+.image {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  position: absolute;
+}
+.face-image-1 {
+  width: 60px;
+  height: 60px;
+  bottom: 185px;
+  left: 300px;
+}
+.face-image-2 {
+  width: 60px;
+  height: 60px;
+  bottom: 190px;
+  left: 500px;
+}
+.face-image-3 {
+  width: 70px;
+  height: 70px;
+  bottom: 140px;
+  left: 700px;
+}
+.face-image-4 {
+  width: 60px;
+  height: 60px;
+  bottom: 95px;
+  left: 900px;
+}
+.face-image-5 {
+  width: 60px;
+  height: 60px;
+  bottom: 100px;
+  left: 1100px;
+}

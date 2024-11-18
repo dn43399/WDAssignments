@@ -1,0 +1,110 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.maindiv {
+  height: auto;
+  width: 100%;
+  background-color: beige;
+  display: flex;
+  flex-direction: row;
+}
+.imgdiv {
+  height: 100vh;
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  overflow: hidden;
+}
+.child1 {
+  grid-column: span 4;
+}
+.child2 {
+  grid-column: span 2;
+}
+.child3 {
+  grid-column: span 1;
+}
+.child4 {
+  grid-column: span 4;
+}
+.child5 {
+  grid-column: span 1;
+}
+.child6 {
+  grid-column: span 3;
+}
+.child7 {
+  grid-column: span 3;
+}
+.child8 {
+  grid-column: span 2;
+}
+.child9 {
+  grid-column: span 2;
+}
+.child10 {
+  grid-column: span 2;
+}
+.grid-item {
+  height: 200px;
+  background-image: url(Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.textdiv {
+  height: 100vh;
+  width: 25%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+
+.sutdiv {
+  height: 80px;
+  width: 80%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+}
+.head1 {
+  font-size: 30px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.anchordiv {
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+}
+.anchor {
+  font-size: 25px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.icondiv {
+  height: 50px;
+  width: 80%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+  gap: 20px;
+}
+.fa-brands {
+  color: white;
+  font-size: 30px;
+}

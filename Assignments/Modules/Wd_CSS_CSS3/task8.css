@@ -1,0 +1,101 @@
+.body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 300px;
+  width: 1000px;
+  background-color: white;
+  position: relative;
+}
+.crl1 {
+  height: 80px;
+  width: 80px;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+.crl2 {
+  height: 100px;
+  width: 100px;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  opacity: 0.4;
+  position: absolute;
+  margin-left: 60px;
+  margin-top: 90px;
+}
+.crl3 {
+  height: 120px;
+  width: 120px;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  opacity: 0.5;
+  position: absolute;
+  margin-left: 110px;
+  margin-top: 80px;
+}
+.crl4 {
+  height: 140px;
+  width: 140px;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  opacity: 0.5;
+  position: absolute;
+  margin-left: 170px;
+  margin-top: 70px;
+}
+.crl5 {
+  height: 160px;
+  width: 160px;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  opacity: 0.5;
+  position: absolute;
+  margin-left: 240px;
+  margin-top: 60px;
+}
+.crl6 {
+  height: 180px;
+  width: 180px;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  opacity: 0.5;
+  position: absolute;
+  margin-left: 320px;
+  margin-top: 50px;
+}
+.crl7 {
+  height: 200px;
+  width: 200px;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  opacity: 0.5;
+  position: absolute;
+  margin-left: 410px;
+  margin-top: 40px;
+}
+.crl8 {
+  height: 240px;
+  width: 240px;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  opacity: 0.5;
+  position: absolute;
+  margin-left: 510px;
+  margin-top: 20px;
+}
+.crl9 {
+  height: 280px;
+  width: 280px;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 620px;
+  margin-top: 5px;
+}
