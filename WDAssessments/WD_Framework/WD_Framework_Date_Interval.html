@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Interval Calculator</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .container {
+        max-width: 600px;
+        margin-top: 50px;
+      }
+      .result-box {
+        margin-top: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f8f9fa;
+      }
+      .result-box p {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="mb-4">Date Interval</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>From:</label>
+            <input type="text" class="form-control datepicker" id="fromDate" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label>To:</label>
+            <input type="text" class="form-control datepicker" id="toDate" />
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <button class="btn btn-primary" id="calculate">Calculate</button>
+      </div>
+      <div class="result-box" id="result">
+        <h5>
+          Date interval between <span id="startDate"></span> and
+          <span id="endDate"></span>
+        </h5>
+        <p>In Years: <span id="years"></span></p>
+        <p>In Months: <span id="months"></span></p>
+        <p>In Weeks: <span id="weeks"></span></p>
+        <p>In Days: <span id="days"></span></p>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".datepicker").datepicker({
+          format: "dd-mm-yyyy",
+          autoclose: true,
+        });
+
+        $("#fromDate").on("changeDate", function (e) {
+          $("#toDate").datepicker("setStartDate", e.date);
+        });
+
+        $("#toDate").on("changeDate", function (e) {
+          $("#fromDate").datepicker("setEndDate", e.date);
+        });
+
+        function parseDate(dateStr) {
+          const parts = dateStr.split("-");
+          const day = Number(parts[0]);
+          const month = Number(parts[1]);
+          const year = Number(parts[2]);
+          return new Date(year, month - 1, day);
+        }
+
+        $("#calculate").click(function () {
+          const fromDateValue = $("#fromDate").val();
+          const toDateValue = $("#toDate").val();
+
+          if (fromDateValue && toDateValue) {
+            const startDate = parseDate(fromDateValue);
+            const endDate = parseDate(toDateValue);
+
+            const millisecondsPerDay = 1000 * 60 * 60 * 24;
+            const days = Math.floor((endDate - startDate) / millisecondsPerDay);
+
+            const weeks = Math.floor(days / 7);
+
+            let years = endDate.getFullYear() - startDate.getFullYear();
+            let months = endDate.getMonth() - startDate.getMonth() + years * 12;
+
+            if (endDate.getDate() < startDate.getDate()) {
+              months--;
+            }
+            years = Math.floor(months / 12);
+
+            $("#startDate").text(fromDateValue);
+            $("#endDate").text(toDateValue);
+            $("#years").text(years);
+            $("#months").text(months);
+            $("#weeks").text(weeks);
+            $("#days").text(days);
+          } else {
+            alert("Please select valid dates");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
