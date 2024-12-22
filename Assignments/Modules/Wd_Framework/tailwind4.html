@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                100: "#E6F7FF",
+                200: "#BAE7FF",
+                300: "#91D5FF",
+                400: "#69C0FF",
+                500: "#40A9FF",
+                600: "#096DD9",
+                700: "#0050B3",
+              },
+              secondary: {
+                100: "#FFF7E6",
+                200: "#FFE7BA",
+                300: "#FFD591",
+                400: "#FFC069",
+                500: "#FFA940",
+                600: "#D46B08",
+                700: "#AD4E00",
+              },
+            },
+            spacing: {
+              18: "4.5rem",
+              72: "18rem",
+              84: "21rem",
+              96: "24rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer components {
+        .custom-button {
+          @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-in-out;
+        }
+        .custom-button-primary {
+          @apply custom-button bg-primary-500 text-white hover:bg-primary-600 hover:shadow-lg;
+        }
+        .custom-button-secondary {
+          @apply custom-button bg-secondary-500 text-white hover:bg-secondary-600 hover:shadow-lg;
+        }
+        .custom-card {
+          @apply bg-white rounded-xl shadow-md;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto space-y-8">
+      <div class="space-y-4">
+        <h2 class="text-2xl font-bold mb-4">Custom Buttons</h2>
+        <div class="space-x-4">
+          <button class="custom-button-primary">Primary Button</button>
+          <button class="custom-button-secondary">Secondary Button</button>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <h2 class="text-2xl font-bold mb-4">Custom Cards</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="custom-card">
+            <div class="p-18">
+              <h3 class="text-xl font-semibold text-primary-600">
+                Custom Card 1
+              </h3>
+              <p class="mt-2 text-gray-600">
+                This card uses our custom spacing.
+              </p>
+            </div>
+          </div>
+
+          <div class="custom-card">
+            <div class="bg-secondary-100 p-18">
+              <h3 class="text-xl font-semibold text-secondary-600">
+                Custom Card 2
+              </h3>
+              <p class="mt-2 text-gray-600">
+                This card uses our custom secondary colors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

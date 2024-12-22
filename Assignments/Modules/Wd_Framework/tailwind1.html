@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Redesigned Page</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-100 text-gray-800 font-sans">
+    <nav class="bg-blue-600 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">My Tailwind Page</h1>
+        <ul class="flex space-x-4">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">Services</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="bg-blue-500 text-white py-20">
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4">
+          Welcome to Tailwind CSS
+        </h1>
+        <p class="text-lg md:text-2xl mb-6">
+          Build modern, responsive websites with ease.
+        </p>
+        <a
+          href="#services"
+          class="bg-white text-blue-500 px-6 py-3 rounded-lg shadow-lg font-semibold hover:bg-gray-200 transition duration-300"
+        >
+          Get Started
+        </a>
+      </div>
+    </header>
+
+    <section class="py-16">
+      <div class="container mx-auto grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-4">About Us</h2>
+          <p class="text-gray-600">
+            Tailwind CSS is a utility-first CSS framework packed with classes
+            like flex, pt-4, text-center, and rotate-90 that can be composed to
+            build any design, directly in your markup.
+          </p>
+          <a
+            href="#contact"
+            class="text-blue-600 font-semibold mt-4 inline-block hover:underline"
+            >Learn More →</a
+          >
+        </div>
+        <img
+          src="https://via.placeholder.com/500x300"
+          alt="About Us"
+          class="rounded-lg shadow-lg"
+        />
+      </div>
+    </section>
+
+    <section id="services" class="bg-gray-200 py-16">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Our Services</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold mb-4">Web Design</h3>
+            <p class="text-gray-600">
+              Craft modern, responsive websites that work on any device.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold mb-4">SEO Optimization</h3>
+            <p class="text-gray-600">
+              Improve your website's visibility and search rankings.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold mb-4">E-commerce</h3>
+            <p class="text-gray-600">
+              Create powerful online stores to grow your business.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
+        <form
+          action="#"
+          method="POST"
+          class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg"
+        >
+          <div class="mb-4">
+            <label for="name" class="block font-semibold mb-2">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block font-semibold mb-2">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block font-semibold mb-2"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-blue-600 text-white py-6">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 My Tailwind Page. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                100: "#E6F7FF",
+                200: "#BAE7FF",
+                300: "#91D5FF",
+                400: "#69C0FF",
+                500: "#40A9FF",
+                600: "#096DD9",
+                700: "#0050B3",
+              },
+              secondary: {
+                100: "#FFF7E6",
+                200: "#FFE7BA",
+                300: "#FFD591",
+                400: "#FFC069",
+                500: "#FFA940",
+                600: "#D46B08",
+                700: "#AD4E00",
+              },
+            },
+            spacing: {
+              18: "4.5rem",
+              72: "18rem",
+              84: "21rem",
+              96: "24rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-gray-100 p-8">
+    Customized Tailwind’s configuration to include a new color scheme and
+    spacing values
+  </body>
+</html>
